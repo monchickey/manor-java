@@ -1,4 +1,4 @@
-package com.monchickey.dataprocess;
+package com.monchickey.manor.dataprocess;
 
 import java.util.Random;
 import java.util.UUID;

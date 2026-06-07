@@ -1,4 +1,4 @@
-import com.monchickey.dataprocess.Encoding;
+import com.monchickey.manor.dataprocess.Encoding;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

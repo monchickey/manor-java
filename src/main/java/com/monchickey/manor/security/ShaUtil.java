@@ -1,9 +1,9 @@
-package com.monchickey.security;
+package com.monchickey.manor.security;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class SHAUtil {
+public class ShaUtil {
     /**
      * SHA1 单向hash
      * @param src  原始字节数组

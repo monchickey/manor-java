@@ -1,4 +1,4 @@
-package com.monchickey.dataprocess;
+package com.monchickey.manor.dataprocess;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,4 +1,4 @@
-package com.monchickey.os;
+package com.monchickey.manor.os;
 
 import java.io.BufferedReader;
 import java.io.IOException;

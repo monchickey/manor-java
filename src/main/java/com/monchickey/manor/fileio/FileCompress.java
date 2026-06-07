@@ -1,4 +1,4 @@
-package com.monchickey.fileio;
+package com.monchickey.manor.fileio;
 
 import java.io.*;
 import java.util.zip.CRC32;

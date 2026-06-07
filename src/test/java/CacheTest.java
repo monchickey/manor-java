@@ -1,4 +1,4 @@
-import com.monchickey.cache.LRUCache;
+import com.monchickey.manor.cache.LruCache;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +6,7 @@ public class CacheTest {
 
     @Test
     public void testLRUCache() {
-        LRUCache<String, Integer> lruCache = new LRUCache<>(100);
+        LruCache<String, Integer> lruCache = new LruCache<>(100);
         for(int i = 0; i < 100; i++) {
             lruCache.put(i + "", 1);
         }

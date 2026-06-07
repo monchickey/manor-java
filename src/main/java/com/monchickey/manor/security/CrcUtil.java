@@ -1,8 +1,8 @@
-package com.monchickey.security;
+package com.monchickey.manor.security;
 
 import java.util.zip.CRC32;
 
-public class CRCUtil {
+public class CrcUtil {
     /**
      * crc32 校验码计算
      * @param src

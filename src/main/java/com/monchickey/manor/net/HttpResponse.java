@@ -1,13 +1,13 @@
-package com.monchickey.net;
+package com.monchickey.manor.net;
 
 import java.util.List;
 import java.util.Map;
 
-public class HTTPResponse {
+public class HttpResponse {
     private Map<String, List<String>> headers;
     private String content;
 
-    HTTPResponse(Map<String, List<String>> headers, String content) {
+    HttpResponse(Map<String, List<String>> headers, String content) {
         this.headers = headers;
         this.content = content;
     }

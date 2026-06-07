@@ -1,4 +1,4 @@
-package com.monchickey.security;
+package com.monchickey.manor.security;
 
 /** 
  * Password Hashing With PBKDF2 (http://crackstation.net/hashing-security.htm).

@@ -1,4 +1,4 @@
-package com.monchickey.net;
+package com.monchickey.manor.net;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -14,7 +14,7 @@ import java.util.Map;
  *
  */
 
-public class HTTPUtil {
+public class HttpUtil {
     
     /**
      * 简单HTTP get方法获取指定uri网络资源
@@ -65,7 +65,7 @@ public class HTTPUtil {
      *            请求响应的编码
      * @return 成功: 资源响应头和内容的HTTPResponse对象, 失败: null
      */
-    public static HTTPResponse get(String uri, String params, Map<String, String> headers, String charset) {
+    public static HttpResponse get(String uri, String params, Map<String, String> headers, String charset) {
         StringBuffer buffer = new StringBuffer();
         BufferedReader in = null;
         try {
@@ -91,7 +91,7 @@ public class HTTPUtil {
                 buffer.append("\r\n");
             }
 
-            HTTPResponse response = new HTTPResponse(responseHeaders, buffer.toString());
+            HttpResponse response = new HttpResponse(responseHeaders, buffer.toString());
             return response;
         } catch (Exception e) {
             e.printStackTrace();
@@ -121,7 +121,7 @@ public class HTTPUtil {
      *            返回资源响应的读取编码方式
      * @return 成功: 资源响应头和内容的HTTPResponse对象, 失败: null
      */
-    public static HTTPResponse post(String url, String body, Map<String, String> headers, String charset) {
+    public static HttpResponse post(String url, String body, Map<String, String> headers, String charset) {
         PrintWriter out = null;
         BufferedReader in = null;
         StringBuffer buffer = new StringBuffer();
@@ -152,7 +152,7 @@ public class HTTPUtil {
                 buffer.append("\r\n");
             }
 
-            HTTPResponse response = new HTTPResponse(conn.getHeaderFields(), buffer.toString());
+            HttpResponse response = new HttpResponse(conn.getHeaderFields(), buffer.toString());
             return response;
         } catch (Exception e) {
             e.printStackTrace();

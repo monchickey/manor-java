@@ -1,18 +1,18 @@
-package com.monchickey.cache;
+package com.monchickey.manor.cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-public class LRUCache<K, V> {
+public class LruCache<K, V> {
     private int maxLength;
     private LinkedHashMap<K, V> cache;
     private final float LOAD_FACTOR = 0.75f;
     // 读写锁
     private ReadWriteLock lock = new ReentrantReadWriteLock();
 
-    public LRUCache(int maxLength) {
+    public LruCache(int maxLength) {
         this.maxLength = maxLength;
         int capacity = (int) Math.ceil(maxLength / LOAD_FACTOR) + 1;
         cache = new LinkedHashMap(capacity, LOAD_FACTOR, true) {

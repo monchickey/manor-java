@@ -1,9 +1,6 @@
-package com.monchickey.dataprocess;
+package com.monchickey.manor.dataprocess;
 
 import java.io.UnsupportedEncodingException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;

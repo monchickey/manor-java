@@ -1,4 +1,4 @@
-package com.monchickey.image;
+package com.monchickey.manor.image;
 
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;

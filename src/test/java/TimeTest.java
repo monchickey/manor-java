@@ -1,4 +1,4 @@
-import com.monchickey.dataprocess.TimeUtil;
+import com.monchickey.manor.dataprocess.TimeUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

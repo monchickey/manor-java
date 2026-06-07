@@ -1,7 +1,6 @@
-import com.monchickey.dataprocess.Encoding;
-import com.monchickey.dataprocess.Transform;
-import com.monchickey.security.PBKDF2Hash;
-import com.monchickey.security.SHAUtil;
+import com.monchickey.manor.dataprocess.Encoding;
+import com.monchickey.manor.security.PBKDF2Hash;
+import com.monchickey.manor.security.ShaUtil;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -62,7 +61,7 @@ public class SecurityTest {
     @Test
     public void testSHA1() throws UnsupportedEncodingException {
         String a = "Junit Test.";
-        byte[] r = SHAUtil.SHA1(a.getBytes("UTF-8"));
+        byte[] r = ShaUtil.SHA1(a.getBytes("UTF-8"));
         Assertions.assertNotNull(r);
         Assertions.assertEquals(Encoding.hex(r), "f2b876687acaeececbedb050efb8e533835bbc94");
     }

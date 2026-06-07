@@ -1,4 +1,4 @@
-package com.monchickey.fileio;
+package com.monchickey.manor.fileio;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -24,7 +24,7 @@ import java.util.List;
  *
  */
 
-public class IOUtil {
+public class IoUtil {
     
     /**
      * 判断一个完整的路径是文件还是目录

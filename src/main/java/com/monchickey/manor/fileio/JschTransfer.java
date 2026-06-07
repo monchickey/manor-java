@@ -1,4 +1,4 @@
-package com.monchickey.fileio;
+package com.monchickey.manor.fileio;
 
 import java.util.Properties;
 
@@ -14,7 +14,7 @@ import com.jcraft.jsch.SftpException;
  * @author monchickey
  *
  */
-public class JSchTransfer {
+public class JschTransfer {
     
     private JSch jsch;
     private Session session;
@@ -25,7 +25,7 @@ public class JSchTransfer {
 
     private boolean isConnected = false;
     
-    public JSchTransfer(String host, int port,String username, String password) {
+    public JschTransfer(String host, int port, String username, String password) {
         this.host = host;
         this.port = port;
         this.username = username;
